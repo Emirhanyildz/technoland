@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOLAND - Yerli Teknoloji Forumu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="ana-baslik">
+        <div class="logo-bolumu">
+            <img width="400" src="logo.jpeg" alt="Technoland Logosu">
+            <h1>Yerli teknoloji forumuna hoş geldiniz!</h1>
+        </div>
+
+        <nav id="ana-menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="uyelik-islemleri">
+            <article class="giris-kutusu">
+                <h3>Giriş Yap</h3>
+                <form action="giris.php" method="POST">
+                    <label for="giris_kadi">Kullanıcı adı:</label>
+                    <input type="text" id="giris_kadi" name="kadi" placeholder="Kullanıcı adınızı giriniz..." required>
+                    
+                    <label for="giris_sifre">Şifre:</label>
+                    <input type="password" id="giris_sifre" name="sifre" placeholder="Şifrenizi giriniz..." required>
+                    
+                    <div class="form-group">
+                    <input type="checkbox" id="beni_hatirla" name="beni_hatirla">
+                    <label for="beni_hatirla">Beni hatırla</label>
+                    </div>
+                    
+                    <input type="submit" value="Giriş Yap">
+                </form>
+            </article>
+
+            <article class="kayit-kutusu">
+                <h3>Kayıt Ol</h3>
+                <form action="kayit.php" method="POST">
+                    <label for="kayit_mail">Kullanıcı maili:</label>
+                    <input type="email" id="kayit_mail" name="mail" placeholder="Mailinizi giriniz..." required>
+                    
+                    <label for="kayit_kadi">Kullanıcı adı:</label>
+                    <input type="text" id="kayit_kadi" name="kadi" placeholder="Kullanıcı adınızı belirleyiniz..." required>
+                    
+                    <label for="kayit_sifre">Şifre:</label>
+                    <input type="password" id="kayit_sifre" name="sifre" placeholder="Şifrenizi belirleyiniz..." required>
+                    
+                    <label for="dogum_tarihi">Doğum tarihinizi seçiniz:</label>
+                    <input type="date" id="dogum_tarihi" name="dogum_tarihi">
+                    
+                    <input type="submit" value="Kayıt Ol">
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="forum-kategorileri">
+            <h2>Forum</h2> 
+    
+        <nav class="kategori-listesi">
+        <ul>
+            <li><a href="#">Yeni Konular</a></li>
+            <li><a href="#">Son zamanlarda popüler konular</a></li>
+            <li><a href="#">Cevap bekleyen konular</a></li>
+            <li><a href="#">Çözülmüş konular</a></li>
+            <li><a href="#">Teknoloji dışı konular</a></li>
+
+            <li class="sag-yasla"><a href="konu-olustur.html"><i class="fa-solid fa-pen-to-square"></i> Konu oluştur</a></li>
+            <li><a href="#">Son mesajlar</a></li>
+        </ul>
+        </nav>
+        </section>
+
+        <hr>
+
+        <section id="konular">
+            <h2>Güncel Konular</h2>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th width="60%">Konu Başlığı</th>
+                        <th width="20%">İstatistikler</th>
+                        <th width="20%">Son Hareket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="konu1.html" style="text-decoration: none; color: inherit;">
+                            <b>R5 5500, RTX 3060 Ventus 2X ne kadar eder?</b>
+                            </a>
+                        </td>
+                        <td>Mesaj sayısı: 0 <br> Görüntüleme sayısı: 3</td>
+                        <td>3 dakika önce <br> Kullanıcı: Kenanzz</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="konu2.html" style="text-decoration: none; color: inherit;">
+                            <b>OEM lisans satın alınca format gerekir mi?</b>
+                            </a>
+                        </td>
+                        <td>Mesaj sayısı: 1 <br> Görüntüleme sayısı: 6</td>
+                        <td>10 dakika önce <br> Kullanıcı: mahmutburak33</td>
+                    </tr>
+                    <tr>
+                        <td><a href="konu3.html" style="text-decoration: none; color: inherit;">
+                        <b>3500 TL'ye palm grip Gaming mouse önerisi</b>
+                        </a></td>
+                        <td>Mesaj sayısı: 5 <br> Görüntüleme sayısı: 10</td>
+                        <td>20 dakika önce <br> Kullanıcı: berkttz</td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <a href="konu4.html" style="text-decoration: none; color: inherit;">
+                        <b>20.000 TL bütçeye bilgisayar önerisi</b>
+                    </a>
+                    </td>
+                    <td>Mesaj sayısı: 9 <br> Görüntüleme sayısı: 32</td>
+                    <td>30 dakika önce <br> Kullanıcı: General_Skywalker</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu5.html" style="text-decoration: none; color: inherit;">
+                        <b>Samsung Galaxy A36 256 GB - 15.899 TL</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 2 <br> Görüntüleme sayısı: 15</td>
+                    <td>32 dakika önce <br> Kullanıcı: ca9an</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu6.html" style="text-decoration: none; color: inherit;">
+                        <b>ASUS ROG Astral RTX 5090 BTF OC vs RTX 5090 OC Edition vs Gigabyte Aorus RTX 5090 Xtreme</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 7 <br> Görüntüleme sayısı: 20</td>
+                    <td>38 dakika önce <br> Kullanıcı: Leviodas</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu7.html" style="text-decoration: none; color: inherit;">
+                        <b>Technoland planlı bakım duyurusu - 07.11.2025</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 0 <br> Görüntüleme sayısı: 35</td>
+                    <td>50 dakika önce <br> Kullanıcı: emirhanyildiz</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu8.html" style="text-decoration: none; color: inherit;">
+                        <b>MSI GeForce GTX 1080 Gaming X 8 GB ikinci elde ne kadar eder?</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 7 <br> Görüntüleme sayısı: 27</td>
+                    <td>52 dakika önce <br> Kullanıcı: duranforreal</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu9.html" style="text-decoration: none; color: inherit;">
+                        <b>Mavi ekran olmaması için hangi ZenTimings ayarları yapılmalı?</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 14 <br> Görüntüleme sayısı: 42</td>
+                    <td>53 dakika önce <br> Kullanıcı: ahmetyasin</td>
+                    <tr>
+                    <td>
+                        <a href="konu10.html" style="text-decoration: none; color: inherit;">
+                        <b>15.000 TL bütçeye akıllı saat önerisi</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 12 <br> Görüntüleme sayısı: 150</td>
+                    <td>55 dakika önce <br> Kullanıcı: mentel455</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu11.html" style="text-decoration: none; color: inherit;">
+                        <b>BIOS ayarları nasıl olmalı?</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 15 <br> Görüntüleme sayısı: 57</td>
+                    <td>1 saat 2 dakika önce <br> Kullanıcı: REALFOX198</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu12.html" style="text-decoration: none; color: inherit;">
+                        <b>PSU nedir? (Öğretici)</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 20 <br> Görüntüleme sayısı: 150</td>
+                    <td>1 saat 5 dakika önce <br> Kullanıcı: emirhanyildiz</td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <a href="konu13.html" style="text-decoration: none; color: inherit;">
+                        <b>Windows 10 vs Windows 11</b>
+                        </a>
+                    </td>
+                    <td>Mesaj sayısı: 60 <br> Görüntüleme sayısı: 250</td>
+                    <td>1 saat 20 dakika önce <br> Kullanıcı: umudik</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+            </form>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>

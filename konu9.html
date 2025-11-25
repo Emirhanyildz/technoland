@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavi ekran olmaması için hangi ZenTimings ayarları yapılmalı? - TECHNOLAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-bolumu">
+            <h1>TECHNOLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html#forum">Forum</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="konu-sayfasi">
+            
+            <div class="yol-haritasi">
+                <a href="index.html">Anasayfa</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="#">Overclock ve Soğutma</a> <i class="fa-solid fa-angle-right"></i>
+                <span>RAM Overclock</span>
+            </div>
+
+            <div class="konu-baslik-alani">
+                <h1>Mavi ekran olmaması için hangi ZenTimings ayarları yapılmalı?</h1>
+                <div class="konu-meta">
+                    <span><i class="fa-solid fa-user"></i> ahmetyasin</span>
+                    <span><i class="fa-solid fa-clock"></i> 53 dakika önce</span>
+                    <span><i class="fa-solid fa-eye"></i> 142 Görüntüleme</span>
+                </div>
+            </div>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-microchip fa-3x"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>ahmetyasin</h3>
+                        <p>Katılım: Haziran 2025</p>
+                        <p>Mesajlar: 85</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 15:50</span>
+                        <span class="mesaj-no">#1</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Selamlar,</p>
+                        <p>Ryzen 5 5600 işlemcim ve 2x8GB 3600MHz CL18 RAM'lerim var. BIOS'tan XMP açınca sorun yok ama ben gecikmeleri düşürmek için elle ayar yaptım. 3800 MHz CL16 deniyorum.</p>
+                        <p>Masaüstünde sorun yok ama oyuna girince 10 dakika sonra "MEMORY_MANAGEMENT" hatasıyla mavi ekran yiyorum. ZenTimings değerlerim aşağıda, sizce hangi voltajı veya zamanlamayı gevşetmem lazım?</p>
+                        
+                        <ul class="sistem-ozellikleri">
+                            <li><b>VSOC:</b> 1.10V</li>
+                            <li><b>VDDP:</b> 0.900V</li>
+                            <li><b>tCL:</b> 16</li>
+                            <li><b>tRCDWR:</b> 19</li>
+                            <li><b>tRCDRD:</b> 19</li>
+                        </ul>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-flask fa-3x" style="color: #6a0dad;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>oc_profesoru</h3>
+                        <p>Katılım: 2020</p>
+                        <p>Mesajlar: 5,600</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 15:55</span>
+                        <span class="mesaj-no">#2</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Hocam 3800 MHz Ryzen 5000 serisi için "sweet spot" sınırıdır ama her işlemcinin Infinity Fabric (FCLK) hızı 1900 MHz'i kaldırmayabilir.</p>
+                        <p>Önce FCLK'yı 1900 MHz'de sabitleyip, RAM'i 3733 MHz'e çekip dene. Ayrıca <b>VSOC voltajını 1.15V</b> yapmayı dene, 1.10V 3800 MHz için sınırda kalmış olabilir.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (4)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-sliders fa-3x" style="color: #0077ff;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>silikon_vadisi</h3>
+                        <p>Katılım: 2022</p>
+                        <p>Mesajlar: 920</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 16:05</span>
+                        <span class="mesaj-no">#3</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Mavi ekranın sebebi büyük ihtimalle <b>tRCDRD</b> değerinin çok sıkı olması. Ryzen'ler bu değeri çok sıkmayı sevmez.</p>
+                        <p>tRCDRD'yi 20 veya 21 yapıp tekrar test et. Bir de ProcODT değerin otomatikte mi? Onu 36.9 veya 40 ohm civarına sabitlemek stabiliteyi artırır.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (2)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-microchip fa-3x"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>ahmetyasin</h3>
+                        <p>Katılım: Haziran 2025</p>
+                        <p>Mesajlar: 85</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 16:25</span>
+                        <span class="mesaj-no">#4</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>@oc_profesoru VSOC'u 1.15V yaptım, @silikon_vadisi hocam tRCDRD'yi de 20'ye çektim.</p>
+                        <p>Şu an 20 dakikadır TestMem5 (TM5) testindeyim hata vermedi. Sanırım voltaj yetersiz geliyordu. Teşekkürler yardımlarınız için.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (1)</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>

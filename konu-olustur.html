@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konu Oluştur - TECHNOLAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-bolumu">
+            <h1>TECHNOLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html#forum">Forum</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="konu-olustur-sayfasi">
+            
+            <div class="konu-baslik-alani">
+                <h2><i class="fa-solid fa-pen-to-square"></i> Yeni Konu Oluştur</h2>
+                <p>Topluluk kurallarına uygun paylaşımlar yapmaya özen gösteriniz.</p>
+            </div>
+
+            <div class="editor-kutu">
+                <form action="konu_kaydet.php" method="POST" enctype="multipart/form-data">
+                    
+                    <label for="kategori">Kategori:</label>
+                    <select name="kategori" id="kategori">
+                        <option value="" disabled selected>Konunuz için bir kategori seçin...</option>
+                        <option value="donanim">Bilgisayar Donanımı</option>
+                        <option value="yazilim">Yazılım & Programlama</option>
+                        <option value="mobil">Mobil Cihazlar</option>
+                        <option value="oyun">Oyun Dünyası</option>
+                        <option value="konu-disi">Konu Dışı</option>
+                    </select>
+
+                    <label for="baslik">Konu Başlığı:</label>
+                    <input type="text" id="baslik" name="baslik" placeholder="Örn: RTX 4060 sistemim görüntü vermiyor..." required>
+
+                    <label for="icerik">Konu İçeriği:</label>
+                    
+                    <div class="toolbar">
+                        <span class="arac"><i class="fa-solid fa-bold"></i></span>
+                        <span class="arac"><i class="fa-solid fa-italic"></i></span>
+                        <span class="arac"><i class="fa-solid fa-underline"></i></span>
+                        <span class="arac">|</span>
+                        <span class="arac"><i class="fa-solid fa-link"></i></span>
+                        <span class="arac"><i class="fa-solid fa-image"></i></span>
+                        <span class="arac"><i class="fa-solid fa-code"></i></span>
+                    </div>
+
+                    <textarea id="icerik" name="icerik" rows="15" placeholder="Detayları buraya yazınız..."></textarea>
+
+                    <div class="alt-islem-satiri">
+                        <div class="dosya-yukle">
+                            <label for="dosya" class="dosya-etiket"><i class="fa-solid fa-paperclip"></i> Dosya Ekle</label>
+                            <input type="file" id="dosya" name="dosya">
+                        </div>
+                        
+                        <input type="submit" value="Konuyu Yayınla">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>

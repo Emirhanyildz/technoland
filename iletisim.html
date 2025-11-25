@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - TECHNOLAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-bolumu">
+            <h1>TECHNOLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html#forum">Forum</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="iletisim-sayfasi">
+            
+            <div class="iletisim-baslik">
+                <h2>Bize Ulaşın</h2>
+                <p>Sorularınız, önerileriniz veya iş birlikleri için bizimle iletişime geçebilirsiniz.</p>
+            </div>
+
+            <div class="iletisim-kutusu">
+                
+                <div class="iletisim-sol">
+                    <h3>İletişim Bilgileri</h3>
+                    
+                    <div class="bilgi-kartlari">
+                        <div class="kart">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Adresimiz</h4>
+                                <p>Nişantaşı Üniversitesi, Maslak 1453, İstanbul</p>
+                            </div>
+                        </div>
+
+                        <div class="kart">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+902122101010">+90 (212) 210 10 10</a></p>
+                            </div>
+                        </div>
+
+                        <div class="kart">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>E-posta</h4>
+                                <p><a href="mailto:20241012167@nisantasi.edu.tr">20241012167@nisantasi.edu.tr</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="harita-alani">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.960416976214!2d29.01878837648356!3d41.09172097133918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab67716327375%3A0x67825f385150247!2zTmnFZWFudGHFn8SxIMOcbml2ZXJzaXRlc2kgTmVvYmVjaCBLYW1ww7xzw7w!5e0!3m2!1str!2str!4v1714567890123!5m2!1str!2str" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="iletisim-sag">
+                    <h3>Bize Yazın</h3>
+                    <form action="mesaj_gonder.php" method="POST">
+                        
+                        <label for="adsoyad">Adınız Soyadınız:</label>
+                        <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınız Soyadınız" required>
+
+                        <label for="email">E-posta Adresiniz:</label>
+                        <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+
+                        <label for="konu">Konu:</label>
+                        <select name="konu" id="konu">
+                            <option value="genel">Genel Sorular</option>
+                            <option value="teknik">Teknik Destek</option>
+                            <option value="reklam">Reklam & İşbirliği</option>
+                            <option value="sikayet">Şikayet & Öneri</option>
+                        </select>
+
+                        <label for="mesaj">Mesajınız:</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız..." required></textarea>
+
+                        <input type="submit" value="Mesajı Gönder">
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>

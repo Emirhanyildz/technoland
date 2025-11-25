@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS ayarları nasıl olmalı? - TECHNOLAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-bolumu">
+            <h1>TECHNOLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html#forum">Forum</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="konu-sayfasi">
+            
+            <div class="yol-haritasi">
+                <a href="index.html">Anasayfa</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="#">Teknik Destek</a> <i class="fa-solid fa-angle-right"></i>
+                <span>BIOS & Sürücüler</span>
+            </div>
+
+            <div class="konu-baslik-alani">
+                <h1>BIOS ayarları nasıl olmalı?</h1>
+                <div class="konu-meta">
+                    <span><i class="fa-solid fa-user"></i> REALFOX198</span>
+                    <span><i class="fa-solid fa-clock"></i> 1 saat 2 dakika önce</span>
+                    <span><i class="fa-solid fa-eye"></i> 57 Görüntüleme</span>
+                </div>
+            </div>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-fox fa-3x" style="color: #e67e22;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>REALFOX198</h3>
+                        <p>Katılım: Mart 2025</p>
+                        <p>Mesajlar: 15</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 14:55</span>
+                        <span class="mesaj-no">#1</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Merhaba arkadaşlar,</p>
+                        <p>Yeni bir sistem topladım (ASUS B550 anakart, Ryzen 5 5600 işlemci). Sistemi kurdum, görüntü geldi ve BIOS ekranındayım.</p>
+                        <p>Windows kurmadan önce yapmam gereken kritik ayarlar var mı? RAM'ler şu an 2133 MHz gözüküyor ama kutusunda 3600 MHz yazıyor. Yardımcı olabilir misiniz?</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-cogs fa-3x" style="color: #555;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>bios_master</h3>
+                        <p>Katılım: 2021</p>
+                        <p>Mesajlar: 3,400</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 15:00</span>
+                        <span class="mesaj-no">#2</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Hayırlı olsun hocam. Windows kurmadan önce kesinlikle şu ayarları yapın:</p>
+                        <ul class="sistem-ozellikleri">
+                            <li><b>D.O.C.P / XMP:</b> Bunu "Profile 1" yapın. RAM'leriniz ancak o zaman 3600 MHz çalışır.</li>
+                            <li><b>Re-Size BAR:</b> "Enabled" yapın (Ekran kartı performansını artırır).</li>
+                            <li><b>Above 4G Decoding:</b> "Enabled" yapın.</li>
+                            <li><b>CSM (Compatibility Support Module):</b> "Disabled" yapın.</li>
+                        </ul>
+                        <p>Bu ayarları yapıp F10 ile kaydedip çıkın, sonra Windows kurun.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (5)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-brands fa-windows fa-3x" style="color: #0078d7;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>windows11_fan</h3>
+                        <p>Katılım: 2023</p>
+                        <p>Mesajlar: 670</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 15:05</span>
+                        <span class="mesaj-no">#3</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Arkadaşın dediklerine ek olarak, eğer Windows 11 kuracaksanız <b>Secure Boot</b> (Güvenli Önyükleme) ayarını "Windows UEFI Mode" olarak seçtiğinizden emin olun.</p>
+                        <p>Ayrıca AMD fTPM ayarının da "Enabled" (Açık) olması gerekiyor, yoksa Windows 11 kurulumunda hata alırsınız.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (3)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-fox fa-3x" style="color: #e67e22;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>REALFOX198</h3>
+                        <p>Katılım: Mart 2025</p>
+                        <p>Mesajlar: 15</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 15:20</span>
+                        <span class="mesaj-no">#4</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>@bios_master @windows11_fan Çok teşekkürler. D.O.C.P açınca RAM hızı düzeldi. Diğer ayarları da dediğiniz gibi yaptım, şimdi kuruluma geçiyorum.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (1)</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>

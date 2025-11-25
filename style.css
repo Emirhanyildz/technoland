@@ -1,0 +1,346 @@
+/* =========================================
+   1. GENEL SAYFA AYARLARI
+   ========================================= */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================================
+   2. HEADER VE ANA MENÜ
+   ========================================= */
+header {
+    background-color: #212121;
+    color: white;
+    padding: 20px 0; /* Yanlardan değil, sadece üst-alttan boşluk */
+    text-align: center;
+    border-bottom: 3px solid #0077ff;
+}
+
+.logo-bolumu h1 {
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Ana Menü Kutusu */
+nav ul {
+    display: flex;             /* Yan yana diz */
+    justify-content: center;   /* Menüyü tam ortaya hizala (Yamukluğu çözer) */
+    align-items: center;       /* Dikeyde ortala */
+    background-color: #333;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    flex-wrap: nowrap;         /* Asla alt satıra geçmesin */
+}
+
+/* Ana Menü Linkleri */
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    white-space: nowrap;       /* Yazıların alt satıra kaymasını engeller! (Kilit Kod) */
+}
+
+nav ul li a:hover {
+    background-color: #0077ff;
+    color: white;
+}
+
+/* =========================================
+   3. FORUM KATEGORİ MENÜSÜ (Siyah Şerit)
+   ========================================= */
+/* Forum Başlığı */
+#forum-kategorileri h2 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    border-bottom: 3px solid #0077ff;
+    padding-bottom: 5px;
+}
+
+/* Kategori Menüsü Kapsayıcısı */
+.kategori-listesi ul {
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    padding: 0 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    flex-wrap: nowrap; /* Yazıların sıkışınca aşağı düşmesini engeller */
+    overflow-x: auto;  /* Ekran çok küçülürse kaydırma çubuğu çıksın ama bozulmasın */
+}
+
+/* Kategori Linkleri */
+.kategori-listesi ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px; /* Biraz küçülttük sığsın diye */
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap; /* İŞTE BU: Yazıları tek satırda tutar */
+}
+
+.kategori-listesi ul li a:hover {
+    background-color: transparent !important;
+    color: #0077ff !important;
+}
+
+/* "Konu Oluştur" Sağa Yaslama */
+.sag-yasla {
+    margin-left: auto;
+    border-left: 1px solid #444;
+}
+
+.sag-yasla a {
+    color: #ffcc00 !important; /* Sarı renk */
+}
+
+.sag-yasla a:hover {
+    background-color: #0077ff !important; /* Mavi arka plan */
+    color: white !important;
+    border-radius: 0; /* Köşeleri menüye uysun */
+}
+
+/* =========================================
+   4. ANA İÇERİK VE TABLOLAR
+   ========================================= */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Başlıklar */
+h2, h3 {
+    border-bottom: 2px solid #0077ff;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Tablo Ayarları */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+table td b {
+    color: #007bff;
+    font-size: 16px;
+}
+
+/* =========================================
+   5. FORMLAR (GİRİŞ, İLETİŞİM, EDİTÖR)
+   ========================================= */
+/* Yan Yana Kutular */
+article.giris-kutusu, article.kayit-kutusu {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center; /* İçerikleri ortala */
+}
+
+section#uyelik-islemleri {
+    text-align: center;
+}
+
+/* Etiketler */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #333;
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Inputlar */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    
+    /* DÜZELTME BURADA */
+    width: 90%;          /* Toolbar ile aynı genişlik */
+    display: block;      /* Blok yaptık ki ortalayabilelim */
+    margin: 0;      /* Toolbar'ın tam altına hizaladık */
+    box-sizing: border-box;
+    
+    /* Köşe Yumuşatma Ayarı (Üst köşeler dik olsun ki toolbarla yapışsın) */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+textarea:focus {
+    border-color: #0077ff;
+    outline: none;
+}
+
+/* Butonlar */
+input[type="submit"] {
+    background-color: #0077ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    width: auto; /* Buton tam genişlik olmasın */
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Checkbox (Beni Hatırla) */
+.form-group {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.form-group label {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* =========================================
+   6. ÖZEL SAYFALAR (KONU DETAY, OLUŞTUR, İLETİŞİM)
+   ========================================= */
+
+/* --- Konu Detay --- */
+.yol-haritasi { font-size: 14px; margin-bottom: 20px; color: #666; }
+.yol-haritasi a { color: #666; }
+.yol-haritasi a:hover { color: #0077ff; text-decoration: underline; }
+.yol-haritasi i { font-size: 10px; margin: 0 5px; }
+
+.konu-baslik-alani h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
+.konu-meta { font-size: 13px; color: #777; border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px; }
+.konu-meta span { margin-right: 15px; }
+
+.forum-mesaj { display: flex; background-color: #fff; border: 1px solid #e1e1e1; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.kullanici-bilgi { width: 200px; background-color: #f8f9fa; padding: 20px; text-align: center; border-right: 1px solid #e1e1e1; flex-shrink: 0; }
+.avatar-kutusu { background-color: #fff; width: 100px; height: 100px; margin: 0 auto 15px auto; border-radius: 50%; border: 3px solid #e1e1e1; display: flex; align-items: center; justify-content: center; color: #555; }
+.kullanici-detay h3 { font-size: 16px; margin: 10px 0 5px 0; color: #0077ff; }
+.mesaj-icerik-alani { flex-grow: 1; position: relative; }
+.mesaj-baslik { background-color: #fff; padding: 10px 20px; border-bottom: 1px solid #f0f0f0; font-size: 12px; color: #999; display: flex; justify-content: space-between; }
+.icerik-yazisi { padding: 20px; font-size: 15px; line-height: 1.6; color: #333; min-height: 100px; }
+.sistem-ozellikleri { background-color: #f1f8ff; padding: 15px; border-radius: 5px; border-left: 4px solid #0077ff; margin-top: 15px; }
+.mesaj-alt-butonlar { padding: 15px 20px; border-top: 1px solid #f0f0f0; text-align: right; background-color: #fff; }
+.mesaj-alt-butonlar a { color: #666; margin-left: 15px; font-weight: bold; font-size: 13px; }
+.mesaj-alt-butonlar a:hover { color: #0077ff; }
+
+/* --- Konu Oluştur --- */
+#konu-olustur-sayfasi { max-width: 900px; margin: 0 auto; }
+.editor-kutu { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #e1e1e1; }
+.toolbar { background-color: #f5f5f5; border: 1px solid #ccc; border-bottom: none; padding: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; width: 90%; margin: 10px 0 0 0;; box-sizing: border-box; }
+.toolbar .arac { display: inline-block; padding: 5px 10px; color: #555; cursor: pointer; border-radius: 3px; margin-right: 2px; }
+.toolbar .arac:hover { background-color: #e0e0e0; }
+.alt-islem-satiri { margin-top: 20px; display: flex; justify-content: space-between; align-items: center; padding: 0 1.5%; }
+.dosya-yukle { margin-top: 0; }
+#baslik { width: 90%; }
+
+/* --- İletişim & Hakkımızda --- */
+.iletisim-kutusu { display: flex; gap: 30px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+.iletisim-sol, .iletisim-sag { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #e1e1e1; }
+.iletisim-sol { flex: 1; }
+.iletisim-sag { flex: 1.5; }
+.iletisim-sag input, .iletisim-sag select, .iletisim-sag textarea { width: 100%; } /* İletişim formu tam otursun */
+.kart { display: flex; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #f0f0f0; }
+.kart i { font-size: 24px; color: #0077ff; width: 50px; text-align: center; margin-right: 15px; }
+.harita-alani iframe { border-radius: 8px; border: 1px solid #ddd; }
+
+#hakkimizda-sayfasi { max-width: 1000px; margin: 0 auto; }
+.beyaz-kutu { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #e1e1e1; }
+.hakkimizda-ust { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
+.video-kapsayici, .metin-kapsayici { flex: 1; min-width: 300px; }
+.video-kapsayici iframe { width: 100%; height: 250px; border-radius: 8px; border: none; }
+.cagri-kutusu { background-color: #f0f7ff; border-left: 4px solid #0077ff; padding: 20px; margin-top: 30px; border-radius: 4px; }
+.ozel-liste-noktali { list-style: none; padding-left: 0; }
+.ozel-liste-noktali i { color: #0077ff; margin-right: 10px; }
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+footer {
+    background-color: #212121;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}

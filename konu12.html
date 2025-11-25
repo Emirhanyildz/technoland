@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSU nedir? (Öğretici) - TECHNOLAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-bolumu">
+            <h1>TECHNOLAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html#forum">Forum</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#konular">Konular</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="konu-sayfasi">
+            
+            <div class="yol-haritasi">
+                <a href="index.html">Anasayfa</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="#">Donanım</a> <i class="fa-solid fa-angle-right"></i>
+                <span>Güç Kaynakları (PSU)</span>
+            </div>
+
+            <div class="konu-baslik-alani">
+                <h1>PSU nedir? (Öğretici)</h1>
+                <div class="konu-meta">
+                    <span><i class="fa-solid fa-user"></i> emirhanyildiz</span>
+                    <span><i class="fa-solid fa-clock"></i> 1 saat 5 dakika önce</span>
+                    <span><i class="fa-solid fa-eye"></i> 2,500 Görüntüleme</span>
+                </div>
+            </div>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-user-shield fa-3x" style="color: #cc0000;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3 style="color: #cc0000;">emirhanyildiz</h3>
+                        <span class="rutbe yonetici">Kurucu / Admin</span>
+                        <p>Katılım: 2020</p>
+                        <p>Mesajlar: 10,500</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 13:00</span>
+                        <span class="mesaj-no">#1</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Selamlar Technoland ailesi,</p>
+                        <p>Bugün sistemin kalbi olan ama genelde en sona bırakılan parçadan bahsedeceğiz: <b>PSU (Power Supply Unit)</b> yani Güç Kaynağı.</p>
+                        <p>PSU, prizden gelen yüksek voltajlı AC (Alternatif Akım) elektriği, bilgisayar parçalarının kullanabileceği düşük voltajlı DC (Doğru Akım) elektriğe çeviren donanımdır. Eğer kalitesiz bir PSU kullanırsanız, tüm sisteminiz bir elektrik dalgalanmasında çöp olabilir.</p>
+                        
+                        <h3>PSU Alırken Nelere Dikkat Edilmeli?</h3>
+                        <ul class="sistem-ozellikleri">
+                            <li><b>12V Kanalı:</b> PSU'nun etiketin üzerinde "12V" kanalından kaç Watt verdiğine bakın. İşlemci ve ekran kartı buradan beslenir.</li>
+                            <li><b>80+ Sertifikası:</b> Verimlilik sertifikasıdır. Prizden çekilen elektriğin ne kadarının sisteme verildiğini gösterir. (White < Bronze < Silver < Gold < Platinum < Titanium).</li>
+                            <li><b>Korumalar:</b> OVP (Yüksek Voltaj), UVP (Düşük Voltaj), SCP (Kısa Devre) gibi korumaların olması şarttır.</li>
+                            <li><b>"C4" Modellerden Uzak Durun:</b> Markası belli olmayan, çok hafif ve ucuz PSU'lar halk arasında "C4" (Patlayıcı) olarak bilinir. Sisteminizi bunlara emanet etmeyin.</li>
+                        </ul>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-thumbtack"></i> Konu Sabitlendi</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (150)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-bolt fa-3x" style="color: #ffcc00;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>voltaj_uzmani</h3>
+                        <p>Katılım: 2021</p>
+                        <p>Mesajlar: 2,100</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 13:15</span>
+                        <span class="mesaj-no">#2</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Harika bir rehber olmuş adminim elinize sağlık. Ek olarak <b>Modüler</b> yapıdan da bahsetmek lazım.</p>
+                        <p>Bütçesi olan arkadaşlara "Tam Modüler" (Full Modular) PSU öneririm. Sadece ihtiyacınız olan kabloları takarsınız, böylece kasa içinde kablo karmaşası olmaz ve hava akışı (airflow) çok daha iyi olur.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (25)</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-question fa-3x" style="color: #555;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3>merakli_uye</h3>
+                        <p>Katılım: 2024</p>
+                        <p>Mesajlar: 40</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 13:30</span>
+                        <span class="mesaj-no">#3</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>Hocam benim kasada 600W Frisby marka bir PSU var, üzerinde 80+ yazıyor ama sertifikası gerçek mi bilmiyorum. 2 yıldır kullanıyorum sorun olmadı, değiştirmeli miyim?</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="forum-mesaj">
+                <aside class="kullanici-bilgi">
+                    <div class="avatar-kutusu">
+                        <i class="fa-solid fa-user-shield fa-3x" style="color: #cc0000;"></i>
+                    </div>
+                    <div class="kullanici-detay">
+                        <h3 style="color: #cc0000;">emirhanyildiz</h3>
+                        <span class="rutbe yonetici">Kurucu / Admin</span>
+                        <p>Katılım: 2020</p>
+                        <p>Mesajlar: 10,500</p>
+                    </div>
+                </aside>
+
+                <div class="mesaj-icerik-alani">
+                    <div class="mesaj-baslik">
+                        <span class="tarih">Bugün 13:45</span>
+                        <span class="mesaj-no">#4</span>
+                    </div>
+                    <div class="icerik-yazisi">
+                        <p>@merakli_uye Dostum o marka forumlarda pek önerilmez, genelde fason üretimdir. "Şimdiye kadar sorun olmadı" demek "bundan sonra olmayacak" demek değildir.</p>
+                        <p>Eğer bütçen varsa FSP, Corsair, Seasonic, MSI veya Asus gibi güvenilir markaların giriş seviyesi modellerine geçmeni şiddetle tavsiye ederim. Sistemin sigortası PSU'dur, riske atma.</p>
+                    </div>
+                    <div class="mesaj-alt-butonlar">
+                        <a href="#" class="buton-cevapla"><i class="fa-solid fa-reply"></i> Cevapla</a>
+                        <a href="#" class="buton-begen"><i class="fa-regular fa-thumbs-up"></i> Beğen (10)</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>EMİRHAN YILDIZ</h2>
+        <p>Tüm hakları saklıdır © 2025</p>
+    </footer>
+
+</body>
+</html>
